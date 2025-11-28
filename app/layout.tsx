@@ -23,7 +23,20 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     // url: 'https://sasacleaners.com', // Add your actual URL
-    // images: ['/og-image.jpg'],   // Add an Open Graph image
+    images: [
+      {
+        url: '/images/logo.png',
+        width: 800,
+        height: 600,
+        alt: 'SaSa Cleaners Logo',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "SaSa Cleaners - Elevate Your Space",
+    description: "Professional cleaning services for homes and offices.",
+    images: ['/images/logo.png'],
   },
   icons: {
     icon: "/favicon.ico",
