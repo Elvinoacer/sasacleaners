@@ -1,6 +1,6 @@
 import { withAuth } from "next-auth/middleware"
 
-export default withAuth({
+export const proxy = withAuth({
   callbacks: {
     authorized: ({ token }) => !!token
   },
@@ -8,6 +8,7 @@ export default withAuth({
 
 export const config = { 
   matcher: [
+    '/admin',
     '/admin/((?!login).*)'  // Protect all /admin routes EXCEPT /admin/login
   ]
 }
